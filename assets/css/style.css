@@ -47,8 +47,8 @@ body {
   
   .saveBtn {
     border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    /* border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px; */
     background-color: #06aed5;
     color: white;
   }
@@ -57,4 +57,22 @@ body {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
   }
+
+  .deleteBtn {
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #9e669b;
+    color: white;
+  }
+  
+  .deleteBtn i:hover {
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+
+.timerRed{
+    background-color: red;
+    color: wheat;
+}
   

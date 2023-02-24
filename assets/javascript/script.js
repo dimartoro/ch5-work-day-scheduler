@@ -20,5 +20,79 @@ $(function () {
     // attribute of each time-block be used to do this?
     //
     // TODO: Add code to display the current date in the header of the page.
+
+    function setTimeStyles(hours){
+      var tasks = document.querySelector("#calendar").children;
+      for(var x = 0; x< tasks.length; x++){
+          var taskVal = parseInt(tasks[x].id.substring(5));
+          tasks[x].classList.remove("past");
+          tasks[x].classList.remove("present");
+          tasks[x].classList.remove("future");
+          if(taskVal < hours){
+              tasks[x].classList.add("past");
+          }
+          if(taskVal > hours){
+              tasks[x].classList.add("future");
+          }
+          if(taskVal == hours){
+              tasks[x].classList.add("present");
+          }
+      }
+  
+  }
+  var currentTime= new Date();
+  
+  setInterval(function(){
+      var t = new Date(); 
+      document.getElementById('currentDay').textContent = t;
+      document.getElementById('currentDay').classList.add('timerRed');
+     },1000);
+
+
+  function fillDays(){
+      var timeBlocks = document.getElementsByClassName('time-block');
+      for(var x = 0; x<timeBlocks.length; x++){
+          var children = timeBlocks[x].children;
+          for(var y = 0; y<children.length; y++){
+              if(children[y].type == 'textarea'){
+                  var valuesFromStorage = localStorage.getItem(timeBlocks[x].id);
+                  children[y].value = valuesFromStorage;
+              }
+          }
+      }
+  }
+
+  function save(caller){
+      var parent = caller.parentElement;
+      for(var x = 0; x<parent.children.length; x++){
+          if(parent.children[x].type == 'textarea'){
+              localStorage.setItem(parent.id, parent.children[x].value);
+          }
+      }
+  }
+
+  function remove(caller){
+      var parent = caller.parentElement;
+      for(var x = 0; x<parent.children.length; x++){
+          if(parent.children[x].type == 'textarea'){
+              parent.children[x].value = '';
+              localStorage.removeItem(parent.id);
+          }
+      }
+  }
+  
+  var saveBtns = document.getElementsByClassName('saveBtn');
+  for(var x= 0; x<saveBtns.length; x++){
+  saveBtns[x].addEventListener('click', function(){save(this);});
+  }
+
+  var deleteBtns = document.getElementsByClassName('deleteBtn');
+  for(var x= 0; x<deleteBtns.length; x++){
+      deleteBtns[x].addEventListener('click', function(){remove(this);});
+  }
+
+  setTimeStyles(currentTime.getHours());
+  fillDays();
+  
   });
   
