@@ -30,9 +30,9 @@ track of the current time and also for the user to be able to detect the passing
 
 ## Usage 
 
-![alt "Work Day Scheduler"](./assets/images/wdschedulercalendarp1.png) Work Day Scheduler 11:40 pm past 5:00 pm all in gray color
-![alt "Work Day Scheduler"](./assets/images/wdschedulercalendarp2.png) Work Day Scheduler Tasks added by clicking the save button
-![alt "Work Day Scheduler"](./assets/images/wdschedulercalendarp3.png) Work Day Scheduler Tasks deleted by clicking the delete button
+![alt "Work Day Scheduler"](./assets/images/wdschedulercalendarp1.png) Work Day Scheduler 11:40 pm past 5:00 pm all in gray color.
+![alt "Work Day Scheduler"](./assets/images/wdschedulercalendarp2.png) Work Day Scheduler Tasks added by clicking the save button.
+![alt "Work Day Scheduler"](./assets/images/wdschedulercalendarp3.png) Work Day Scheduler Tasks deleted by clicking the delete button.
 
 ## ChallengeURL
 
