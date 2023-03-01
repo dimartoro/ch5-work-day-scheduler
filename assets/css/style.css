@@ -72,6 +72,7 @@ body {
   }
 
 .timerRed{
+    padding: 10px;
     background-color: red;
     color: wheat;
 }
