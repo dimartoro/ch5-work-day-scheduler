@@ -4,7 +4,7 @@
 
 ## Description
 
-The Workday Scheduler is an app for the user to schedule work tasks for a regular 8 working hours. The user can save the tasks and see them later after restarting the page or can just delete them to start entering new tasks the next day. The current time is shown at the top of the page to keep the user on 
+The Work Day Scheduler is an app for the user to schedule work tasks for a regular 8 working hours. The user can save the tasks and see them later after restarting the page or can just delete them to start entering new tasks the next day. The current time is shown at the top of the page to keep the user on 
 track of the current time and also for the user to be able to detect the passing of time by seeing the calendar text content areas changing colors from red signaling the present to grey signaling the past and green color signaling the future. The Work Day Scheduler app is coded in jquery and javascript and it is using bootstrap to stylying it.
 
 
@@ -36,7 +36,7 @@ track of the current time and also for the user to be able to detect the passing
 
 ## ChallengeURL
 
-https://github.com/dimartoro/ch5-work-day-scheduler.git
+https://dimartoro.github.io/ch5-work-day-scheduler/
 
 
 ## Credits
