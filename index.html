@@ -30,19 +30,10 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div id="calendar" class="container-fluid px-5">
-      <!-- Use class for "past", "present", and "future" to apply styles to the
-        time-block divs accordingly. The javascript will need to do this by
-        adding/removing these classes on each div by comparing the hour in the
-        id to the current hour. The html provided below is meant to be an example
-        demonstrating how the css provided can be leveraged to create the
-        desired layout and colors. The html below should be removed or updated
-        in the finished product. Remember to delete this comment once the
-        code is implemented.
-        -->
 
-      <!-- Example of a past time block. The "past" class adds a gray background color. -->
-      <div id="hour-8" class="row time-block past">
+    <main id="calendar" class="container-fluid px-5">
+      <!-- Past time block. The "past" class adds a gray background color. -->
+      <article id="hour-8" class="row time-block past">
         <div class="col-2 col-md-1 hour text-center py-3">8AM</div>
         <textarea class="col-8 col-md-9 description" rows="3"> </textarea>
         <button class="btn saveBtn col-1 col-md-1" aria-label="save" onclick="save(this);">
@@ -51,10 +42,10 @@
         <button class="btn deleteBtn col-1 col-md-1" aria-label="delete" onclick="delete(this);">
           <i class="fas fa-trash" aria-hidden="true"></i>
         </button>
-      </div>
+      </article>
 
-      <!-- Example of a present time block. The "present" class adds a red background color. -->
-      <div id="hour-9" class="row time-block present">
+      <!-- Present time block. The "present" class adds a red background color. -->
+      <article id="hour-9" class="row time-block present">
         <div class="col-2 col-md-1 hour text-center py-3">9AM</div>
         <textarea class="col-8 col-md-9 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
@@ -63,21 +54,21 @@
         <button class="btn deleteBtn col-1 col-md-1" aria-label="delete" onclick="delete(this);">
         <i class="fas fa-trash" aria-hidden="true"></i>
         </button>
-      </div>
+      </article>
 
-      <!-- Example of a future time block. The "future" class adds a green background color. -->
-      <div id="hour-10" class="row time-block future">
+      <!-- Fututure time block. The "future" class adds a green background color. -->
+      <article id="hour-10" class="row time-block future">
         <div class="col-2 col-md-1 hour text-center py-3">10AM</div>
         <textarea class="col-8 col-md-9 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
-        <button class="btn deleteBtn col-1 col-md-1" arial-label="delete" onclick="delete(this);">
+        <button class="btn deleteBtn col-2 col-md-1" arial-label="delete" onclick="delete(this);">
           <i class="fas fa-trash" aria-hidden="true"></i>
         </button>
-      </div>
+      </article>
 
-      <div id="hour-11" class="row time-block future">
+      <article id="hour-11" class="row time-block future">
         <div class="col-2 col-md-1 hour text-center py-3">11AM</div>
         <textarea class="col-8 col-md-9 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
@@ -86,9 +77,9 @@
         <button class="btn deleteBtn col-2 col-md-1" aria-label="delete" onclick="delete(this);">
           <i class="fas fa-trash" aria-hidden="true"></i>
         </button>
-      </div>
+      </article>
 
-      <div id="hour-12" class="row time-block future">
+      <article id="hour-12" class="row time-block future">
         <div class="col-2 col-md-1 hour text-center py-3">12PM</div>
         <textarea class="col-8 col-md-9 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
@@ -97,9 +88,9 @@
         <button class="btn deleteBtn col-2 col-md-1" aria-label="delete" onclick="delete(this);">
           <i class="fas fa-trash" aria-hidden="true"></i>
         </button>
-      </div>
+      </article>
 
-      <div id="hour-13" class="row time-block future">
+      <article id="hour-13" class="row time-block future">
         <div class="col-2 col-md-1 hour text-center py-3">1PM</div>
         <textarea class="col-8 col-md-9 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
@@ -108,9 +99,9 @@
         <button class="btn deleteBtn col-2 col-md-1" aria-label="delete" onclick="delete(this);">
           <i class="fas fa-trash" aria-hidden="true"></i>
         </button>
+      </article>
 
-      </div>
-      <div id="hour-14" class="row time-block future">
+      <article id="hour-14" class="row time-block future">
         <div class="col-2 col-md-1 hour text-center py-3">2PM</div>
         <textarea class="col-8 col-md-9 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
@@ -119,10 +110,9 @@
         <button class="btn deleteBtn col-2 col-md-1" aria-label="delete" onclick="delete(this);">
           <i class="fas fa-trash" aria-hidden="true"></i>
         </button>
+      </article>
 
-      </div>
-
-      <div id="hour-15" class="row time-block future">
+      <article id="hour-15" class="row time-block future">
         <div class="col-2 col-md-1 hour text-center py-3">3PM</div>
         <textarea class="col-8 col-md-9 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
@@ -131,9 +121,9 @@
         <button class="btn deleteBtn col-2 col-md-1" aria-label="delete" onclick="delete(this);">
           <i class="fas fa-trash" aria-hidden="true"></i>
         </button>
-      </div>
+      </article>
 
-      <div id="hour-16" class="row time-block future">
+      <article id="hour-16" class="row time-block future">
         <div class="col-2 col-md-1 hour text-center py-3">4PM</div>
         <textarea class="col-8 col-md-9 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
@@ -142,9 +132,9 @@
         <button class="btn deleteBtn col-2 col-md-1" aria-label="delete" onclick="delete(this);">
           <i class="fas fa-trash" aria-hidden="true"></i>
         </button>
-      </div>
+      </article>
 
-      <div id="hour-17" class="row time-block future">
+      <article id="hour-17" class="row time-block future">
         <div class="col-2 col-md-1 hour text-center py-3">5PM</div>
         <textarea class="col-8 col-md-9 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
@@ -153,8 +143,9 @@
         <button class="btn deleteBtn col-2 col-md-1" aria-label="delete" onclick="delete(this);">
           <i class="fas fa-trash" aria-hidden="true"></i>
         </button>
-      </div>
-    </div>
+      </article>
+      
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
